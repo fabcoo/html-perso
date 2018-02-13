@@ -1,0 +1,35 @@
+//main: main.scss
+
+nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+
+    li {
+      width: 25%;
+      list-style-type: none;
+      line-height: 50px;
+      transition: 250ms linear all;
+
+      a {
+        color: white;
+      }
+
+      &:hover {
+        background-color: #ececec;
+
+        a {
+          color: #2f2f2f;
+        }
+      }
+    }
+  }
+}
