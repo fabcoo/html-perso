@@ -1,33 +1,54 @@
 //main: main.scss
 
-nav {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
+header {
+  .fa-bars {
+    display: none;
+  }
 
-  ul {
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
+  .violet {
+    color: $violet !important;
+  }
 
-    li {
-      width: 25%;
-      list-style-type: none;
-      line-height: 50px;
-      transition: 250ms linear all;
+  nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: $transition;
+
+    ul {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+      padding: 0;
+      text-align: center;
 
       a {
-        color: white;
+        color: $white;
+        width: 25%;
+
+        li {
+          list-style-type: none;
+          line-height: 50px;
+          transition: $transition;
+        }
+
+        &:hover {
+          color: $black;
+          text-decoration: none;
+
+          li {
+            background-color: $white;
+          }
+        }
       }
 
-      &:hover {
-        background-color: #ececec;
+      a.active {
+        color: $white;
 
-        a {
-          color: #2f2f2f;
+        li {
+          background-color: $violet;
         }
       }
     }

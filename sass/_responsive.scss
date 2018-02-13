@@ -1,0 +1,35 @@
+// main: main.scss
+
+// Version tablette
+
+@media screen and (max-width: 768px) {
+  header {
+    .fa-bars {
+      display: block;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 11;
+      cursor: pointer;
+    }
+
+    nav {
+      width: 250px;
+      height: 100%;
+      left: -250px;
+
+      ul {
+        flex-direction: column;
+        text-align: left;
+
+        a {
+          width: 100%;
+
+          li {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

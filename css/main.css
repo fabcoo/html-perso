@@ -2,42 +2,84 @@ html {
 	min-height: 100%;
 }
 
-section {
-	min-height: 100vh;
+body {
+	overflow-x: hidden;
 }
 
-nav {
+section {
+	min-height: 100vh;
+	padding: 1rem 0;
+}
+
+section:nth-child(odd) {
+	background-color: #F5F5F5;
+}
+
+h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+h2::after {
+	content: '';
+	display: block;
+	margin: .5rem auto;
+	width: 250px;
+	height: 3px;
+	background-color: #5f4e8b;
+}
+
+header .fa-bars {
+	display: none;
+}
+
+header .violet {
+	color: #5f4e8b !important;
+}
+
+header nav {
 	position: fixed;
 	z-index: 10;
 	top: 0;
 	left: 0;
 	width: 100%;
+	transition: linear all 250ms;
 }
 
-nav ul {
+header nav ul {
 	display: flex;
 	margin: 0;
 	justify-content: center;
 	padding: 0;
+	text-align: center;
 }
 
-nav ul li {
+header nav ul a {
+	color: #fff;
 	width: 25%;
+}
+
+header nav ul a li {
 	list-style-type: none;
 	line-height: 50px;
-	transition: 250ms linear all;
+	transition: linear all 250ms;
 }
 
-nav ul li a {
-	color: white;
+header nav ul a:hover {
+	color: #343a40;
+	text-decoration: none;
 }
 
-nav ul li:hover {
-	background-color: #ececec;
+header nav ul a:hover li {
+	background-color: #fff;
 }
 
-nav ul li:hover a {
-	color: #2f2f2f;
+header nav ul a.active {
+	color: #fff;
+}
+
+header nav ul a.active li {
+	background-color: #5f4e8b;
 }
 
 #home {
@@ -46,6 +88,7 @@ nav ul li:hover a {
 	background-image: url("../img/school.png");
 	display: flex;
 	justify-content: center;
+	padding: 0;
 }
 
 #home video {
@@ -63,4 +106,40 @@ nav ul li:hover a {
 
 #home h1 {
 	align-self: center;
+}
+
+footer .fab {
+	padding: 1rem;
+	opacity: .5;
+	transition: linear all 250ms;
+}
+
+footer .fab:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	header .fa-bars {
+		display: block;
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		z-index: 11;
+		cursor: pointer;
+	}
+	header nav {
+		width: 250px;
+		height: 100%;
+		left: -250px;
+	}
+	header nav ul {
+		flex-direction: column;
+		text-align: left;
+	}
+	header nav ul a {
+		width: 100%;
+	}
+	header nav ul a li {
+		padding: 1rem;
+	}
 }

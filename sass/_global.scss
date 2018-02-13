@@ -1,9 +1,38 @@
 //main: main.scss
 
+$transition: linear all 250ms;
+$black: #343a40;
+$white: #fff;
+$lightgrey: #F5F5F5;
+$violet: #5f4e8b;
+
 html {
   min-height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   min-height: 100vh;
+  padding: 1rem 0;
+
+  &:nth-child(odd) {
+    background-color: $lightgrey;
+  }
+}
+
+h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: block;
+    margin: .5rem auto;
+    width: 250px;
+    height: 3px;
+    background-color: $violet;
+  }
 }
