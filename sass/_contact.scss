@@ -1,0 +1,13 @@
+// main: main.scss
+
+#contact {
+  textarea {
+    height: 20vh;
+  }
+
+  button[type="submit"] {
+    background-color: $violet;
+    border-color: $violet;
+    padding: .75rem 1.5rem;
+  }
+}

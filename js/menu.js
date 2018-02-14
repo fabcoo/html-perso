@@ -60,14 +60,14 @@ $(document).ready(function() {
       var curLink = $(this);
       var refElem = $(curLink.attr('href'));
       //Compare the value of current position and the every section position in each scroll
-      if (refElem.position().top <= currentScrollPos + 50 && refElem.position().top + refElem.height() > currentScrollPos) {
+      if (refElem.position().top <= currentScrollPos + 51 && refElem.position().top + refElem.height() > currentScrollPos) {
         //Remove class active in all nav
         $('nav > ul > a').removeClass("active");
         //Add class active
         curLink.addClass("active");
-        $('.fa-bars').addClass("violet");
+        $('.fa-bars').addClass("violet") && $('.fa-times').addClass("violet");
       } else if (currentScrollPos < $('#presentation').position().top) {
-        $('.fa-bars').removeClass("violet");
+        $('.fa-bars').removeClass("violet") && $('.fa-times').removeClass("violet");
       } else {
         curLink.removeClass("active");
       }

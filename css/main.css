@@ -119,6 +119,16 @@ header nav ul a.active li {
 	margin-bottom: 30vh;
 }
 
+#contact textarea {
+	height: 20vh;
+}
+
+#contact button[type="submit"] {
+	background-color: #5f4e8b;
+	border-color: #5f4e8b;
+	padding: .75rem 1.5rem;
+}
+
 footer .fab {
 	padding: 1rem;
 	opacity: .5;
