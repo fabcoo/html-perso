@@ -17,7 +17,7 @@ function onScrollHandle() {
       strokeWidth: 4,
       trailWidth: 1,
       easing: 'easeInOut',
-      duration: 1200,
+      duration: 2500,
       text: {
         autoStyleContainer: false
       },
@@ -50,7 +50,7 @@ function onScrollHandle() {
       strokeWidth: 4,
       trailWidth: 1,
       easing: 'easeInOut',
-      duration: 1200,
+      duration: 2500,
       text: {
         autoStyleContainer: false
       },
@@ -83,7 +83,7 @@ function onScrollHandle() {
       strokeWidth: 4,
       trailWidth: 1,
       easing: 'easeInOut',
-      duration: 1200,
+      duration: 2500,
       text: {
         autoStyleContainer: false
       },
@@ -116,7 +116,7 @@ function onScrollHandle() {
       strokeWidth: 4,
       trailWidth: 1,
       easing: 'easeInOut',
-      duration: 1200,
+      duration: 2500,
       text: {
         autoStyleContainer: false
       },
@@ -149,7 +149,7 @@ function onScrollHandle() {
       strokeWidth: 4,
       trailWidth: 1,
       easing: 'easeInOut',
-      duration: 1200,
+      duration: 2500,
       text: {
         autoStyleContainer: false
       },
@@ -182,7 +182,7 @@ function onScrollHandle() {
       strokeWidth: 4,
       trailWidth: 1,
       easing: 'easeInOut',
-      duration: 1200,
+      duration: 2500,
       text: {
         autoStyleContainer: false
       },

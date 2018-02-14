@@ -29,7 +29,8 @@ h2::after {
 	background-color: #5f4e8b;
 }
 
-header .fa-bars {
+header .fa-bars,
+header .fa-times {
 	display: none;
 }
 
@@ -115,7 +116,7 @@ header nav ul a.active li {
 
 #competences .progressbarjs {
 	padding: 2rem;
-	margin-bottom: 20vh;
+	margin-bottom: 30vh;
 }
 
 footer .fab {
@@ -129,13 +130,19 @@ footer .fab:hover {
 }
 
 @media screen and (max-width: 768px) {
-	header .fa-bars {
+	header .fa-bars,
+	header .fa-times {
 		display: block;
 		position: fixed;
 		top: 1rem;
 		right: 1rem;
 		z-index: 11;
 		cursor: pointer;
+		transition: linear all 250ms;
+	}
+	header .fa-times {
+		opacity: 0;
+		z-index: 10;
 	}
 	header nav {
 		width: 250px;

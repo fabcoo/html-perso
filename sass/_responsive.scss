@@ -4,13 +4,20 @@
 
 @media screen and (max-width: 768px) {
   header {
-    .fa-bars {
+    .fa-bars,
+    .fa-times {
       display: block;
       position: fixed;
       top: 1rem;
       right: 1rem;
       z-index: 11;
       cursor: pointer;
+      transition: $transition;
+    }
+
+    .fa-times {
+      opacity: 0;
+      z-index: 10;
     }
 
     nav {
