@@ -16,6 +16,7 @@ header {
     left: 0;
     width: 100%;
     transition: $transition;
+    text-transform: uppercase;
 
     ul {
       display: flex;
@@ -26,7 +27,7 @@ header {
 
       a {
         color: $white;
-        width: 25%;
+        width: 20%;
 
         li {
           list-style-type: none;

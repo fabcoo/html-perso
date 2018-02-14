@@ -20,6 +20,9 @@
           <a href="#cv">
             <li>CV</li>
           </a>
+          <a href="#competences">
+            <li>Compétences</li>
+          </a>
           <a href="#portfolio">
             <li>Portfolio</li>
           </a>
@@ -36,18 +39,54 @@
         <small>Formateur, développeur front-end à Lille</small>
       </h1>
     </section>
-    <section id="presentation" class="row">
+    <section id="presentation">
       <div class="container">
         <h2>Présentation</h2>
-        <div class="col-sm-6">
-          <img src="http://via.placeholder.com/400x400" alt="Fabien Coo" class="rounded-circle img-fluid">
-          <legend class="text-center">Fabien Coo</legend>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/600x600" alt="Fabien Coo" class="rounded-circle img-fluid">
+            <legend class="text-center">Fabien Coo</legend>
+          </div>
+          <article class="col-md-8">
+            <p>Passioné d'informatique depuis mon adolescence, j'ai passé le plus clair </p>
+          </article>
         </div>
       </div>
 
     </section>
     <section id="cv">
       <h2>CV</h2>
+    </section>
+    <section id="competences">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="row">
+          <div class="col-md-4 col-6">
+            <h3>HTML</h3>
+            <div class="progressbarjs" id="progressHTML"></div>
+          </div>
+          <div class="col-md-4 col-6">
+            <h3>CSS</h3>
+            <div class="progressbarjs" id="progressCSS"></div>
+          </div>
+          <div class="col-md-4 col-6">
+            <h3>JS / jQuery</h3>
+            <div class="progressbarjs" id="progressJS"></div>
+          </div>
+          <div class="col-md-4 col-6">
+            <h3>Wordpress</h3>
+            <div class="progressbarjs" id="progressWP"></div>
+          </div>
+          <div class="col-md-4 col-6">
+            <h3>SEO</h3>
+            <div class="progressbarjs" id="progressSEO"></div>
+          </div>
+          <div class="col-md-4 col-6">
+            <h3>Emailing (MJML)</h3>
+            <div class="progressbarjs" id="progressMJML"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="portfolio">
       <h2>Portfolio</h2>
@@ -65,9 +104,16 @@
       </a>
     </footer>
 
-    <!-- Mise en place scripts -->
+    <!-- Mise en place jQuery -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Scripts Bootstrap -->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Scripts Progress Bar -->
+    <script src="node_modules/shifty/dist/shifty.min.js"></script>
+    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="js/progressbarConfig.js"></script>
+
     <!-- Gestion menu -->
     <script src="js/menu.js" ></script>
     <!-- Scripts a delete en prod -->

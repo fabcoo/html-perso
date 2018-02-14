@@ -44,6 +44,7 @@ header nav {
 	left: 0;
 	width: 100%;
 	transition: linear all 250ms;
+	text-transform: uppercase;
 }
 
 header nav ul {
@@ -56,7 +57,7 @@ header nav ul {
 
 header nav ul a {
 	color: #fff;
-	width: 25%;
+	width: 20%;
 }
 
 header nav ul a li {
@@ -106,6 +107,15 @@ header nav ul a.active li {
 
 #home h1 {
 	align-self: center;
+}
+
+#competences h3 {
+	text-align: center;
+}
+
+#competences .progressbarjs {
+	padding: 2rem;
+	margin-bottom: 20vh;
 }
 
 footer .fab {
