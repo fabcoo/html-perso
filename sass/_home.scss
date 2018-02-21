@@ -23,5 +23,15 @@
 
   h1 {
     align-self: center;
+    color: $white;
+    background-color: rgba(94,79,137,0.5);
+    width: 100%;
+    padding: 2rem 0;
+    box-shadow: 0 0 10px 5px $black;
+
+    small {
+      padding-top: 20px;
+      display: block;
+    }
   }
 }

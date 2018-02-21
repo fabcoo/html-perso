@@ -35,9 +35,9 @@
     </header>
     <section id="home">
       <video src="video/keyboard.mp4" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline"></video>
-      <h1 class="text-center text-white">Fabien Coo
+      <h1 class="text-center">Fabien Coo
         <br/>
-        <small>Formateur, développeur front-end à Lille</small>
+        <small>Formateur<br />Développeur front-end<br />Lille</small>
       </h1>
     </section>
     <section id="presentation">
@@ -45,7 +45,7 @@
         <h2>Présentation</h2>
         <div class="row">
           <div class="col-md-4">
-            <img src="http://via.placeholder.com/600x600" alt="Fabien Coo" class="rounded-circle img-fluid">
+            <img src="https://via.placeholder.com/600x600" alt="Fabien Coo" class="rounded-circle img-fluid">
             <legend class="text-center">Fabien Coo</legend>
           </div>
           <article class="col-md-8">
@@ -55,9 +55,16 @@
       </div>
 
     </section>
-    <section id="cv">
-      <h2>CV</h2>
-    </section>
+    <!-- <section id="cv">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>CV</h2>
+            <p>Section à venir</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <section id="competences">
       <div class="container">
         <h2>Compétences</h2>
@@ -83,15 +90,22 @@
             <div class="progressbarjs" id="progressSEO"></div>
           </div>
           <div class="col-md-4 col-6">
-            <h3>Emailing (MJML)</h3>
+            <h3>MJML</h3>
             <div class="progressbarjs" id="progressMJML"></div>
           </div>
         </div>
       </div>
     </section>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-    </section>
+    <!-- <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Portfolio</h2>
+            <p>Section à venir</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <section id="contact">
       <div class="container">
         <h2>Contact</h2>
@@ -117,17 +131,17 @@
                 <label for="message">Message :</label>
                 <textarea name="message" id="message" class="form-control"></textarea>
               </div>
-              <button type="submit" name="envoiFormulaire" class="btn btn-primary mx-auto">Envoyer</button>
+              <button type="submit" name="envoiFormulaire" class="btn btn-primary mx-auto" id="submit">Envoyer</button>
             </div>
           </form>
       </div>
     </section>
 
     <footer class="bg-dark text-center">
-      <a href="https://github.com/fabcoo" target="_blank">
+      <a href="https://github.com/fabcoo" target="_blank" title="GitHub Fabien Coo">
         <i class="fab fa-github text-white fa-2x"></i>
       </a>
-      <a href="https://www.linkedin.com/in/fabien-coo-85188b83/" target="_blank">
+      <a href="https://www.linkedin.com/in/fabien-coo-85188b83/" target="_blank" title="Linkedin Fabien Coo">
         <i class="fab fa-linkedin text-white fa-2x"></i>
       </a>
     </footer>

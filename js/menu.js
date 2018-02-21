@@ -67,7 +67,7 @@ $(document).ready(function() {
         curLink.addClass("active");
         $('.fa-bars').addClass("violet") && $('.fa-times').addClass("violet");
       } else if (currentScrollPos < $('#presentation').position().top) {
-        $('.fa-bars').removeClass("violet") && $('.fa-times').removeClass("violet");
+        $('.fa-bars').removeClass("violet") && $('.fa-times').removeClass("violet") && $('nav > ul > a').removeClass("active");
       } else {
         curLink.removeClass("active");
       }

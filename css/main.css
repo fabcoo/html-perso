@@ -7,7 +7,6 @@ body {
 }
 
 section {
-	min-height: 100vh;
 	padding: 1rem 0;
 }
 
@@ -108,6 +107,16 @@ header nav ul a.active li {
 
 #home h1 {
 	align-self: center;
+	color: #fff;
+	background-color: rgba(94, 79, 137, 0.5);
+	width: 100%;
+	padding: 2rem 0;
+	box-shadow: 0 0 10px 5px #343a40;
+}
+
+#home h1 small {
+	padding-top: 20px;
+	display: block;
 }
 
 #competences h3 {
@@ -117,6 +126,7 @@ header nav ul a.active li {
 #competences .progressbarjs {
 	padding: 2rem;
 	margin-bottom: 30vh;
+	position: relative;
 }
 
 #contact textarea {
@@ -140,6 +150,9 @@ footer .fab:hover {
 }
 
 @media screen and (max-width: 768px) {
+	body {
+		font-size: 1.25rem;
+	}
 	header .fa-bars,
 	header .fa-times {
 		display: block;
