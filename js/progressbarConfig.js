@@ -217,10 +217,10 @@ function onScrollHandle() {
     barMJML.text.style.fontSize = '2rem';
     barHTML.animate(1.0);
     barCSS.animate(1.0);
-    barJS.animate(0.65);
-    barWP.animate(0.75);
+    barJS.animate(0.75);
+    barWP.animate(0.9);
     barSEO.animate(0.8);
-    barMJML.animate(0.95); // Number from 0.0 to 1.0
+    barMJML.animate(0.9); // Number from 0.0 to 1.0
   }
 
   // if (currentScrollPos >= $('#presentation').position().top) {

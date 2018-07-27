@@ -1,1 +1,17 @@
 // main: main.scss
+
+#cv {
+  h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: .5rem auto;
+      width: 125px;
+      height: 3px;
+      background-color: $violet;
+    }
+  }
+}
