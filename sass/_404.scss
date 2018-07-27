@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Retro Computer';
+  src: url('../fonts/RetroComputer.eot');
+  src: url('../fonts/RetroComputer.eot?#iefix') format('embedded-opentype'), url('../fonts/RetroComputer.woff') format('woff'), url('../fonts/RetroComputer.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#page404 {
+  background-image: url('../img/404BG.png');
+  background-size: cover;
+
+  section {
+    background: transparent;
+    font-family: 'Retro Computer', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px grey;
+
+    h1 {
+      font-size: 20vw;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 7vw;
+      margin: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    a {
+      color: white;
+      font-size: 2.2vw;
+    }
+  }
+}
